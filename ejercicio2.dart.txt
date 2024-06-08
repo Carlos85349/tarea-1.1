@@ -1,0 +1,12 @@
+void main(){
+  List<int> numeros = [1,2,3,4,5];
+  
+  print('Copia integra de la lista $numeros es:');
+  print(copiaArreglo(numeros));
+}
+
+copiaArreglo(List lista){
+  final copia = [...lista];
+  
+  return copia;
+}
