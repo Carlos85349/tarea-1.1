@@ -1,0 +1,27 @@
+void main(){
+  final r1 = Rectangulo(
+    largo: 5,
+    ancho: 6
+  );
+  
+  final baseRectangulo = r1.largo;
+  final alturaRectangulo = r1.ancho;
+  final areaRectangulo = r1.area;
+  
+  print('El area del rectangulo con base $baseRectangulo y con altura $alturaRectangulo es: $areaRectangulo');
+}
+
+class Rectangulo{
+  
+  //Propiedades
+  final double largo;
+  final double ancho;
+  
+  //Constructor
+  Rectangulo({required this.largo, required this.ancho});
+  
+  //Metodos
+  get area {
+    return largo*ancho;
+  }
+}
